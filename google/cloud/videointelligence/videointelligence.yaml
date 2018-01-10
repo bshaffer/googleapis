@@ -25,11 +25,11 @@ types:
 http:
   rules:
   - selector: google.longrunning.Operations.GetOperation
-    get: '/v1/operations/{name=*}'
+    get: '/v1beta1/operations/{name=*}'
   - selector: google.longrunning.Operations.ListOperations
-    get: '/v1/operations'
+    get: '/v1beta1/operations'
   - selector: google.longrunning.Operations.CancelOperation
-    post: '/v1/operations/{name=*}:cancel'
+    post: '/v1beta1/operations/{name=*}:cancel'
     body: '*'
   - selector: google.longrunning.Operations.DeleteOperation
-    delete: '/v1/operations/{name=*}'
+    delete: '/v1beta1/operations/{name=*}'
